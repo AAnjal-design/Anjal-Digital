@@ -129,3 +129,37 @@ const counterObserver = new IntersectionObserver(function(entries) {
 counters.forEach(function(counter) {
     counterObserver.observe(counter);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.getElementById("whatsappForm");
+
+  if (!form) return;
+
+  form.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const name = form.elements["name"].value.trim();
+    const phone = form.elements["phone"].value.trim();
+    const email = form.elements["email"].value.trim();
+    const message = form.elements["message"].value.trim();
+
+    const whatsappNumber = "919913379665";
+
+    const whatsappMessage =
+      "NEW WEBSITE ENQUIRY - ANJAL DIGITAL\n\n" +
+      "Name: " + name + "\n" +
+      "Phone: " + phone + "\n" +
+      "Email: " + email + "\n" +
+      "Message: " + message;
+
+    const whatsappURL =
+      "https://wa.me/" + whatsappNumber +
+      "?text=" + encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappURL, "_blank");
+
+  });
+
+});
