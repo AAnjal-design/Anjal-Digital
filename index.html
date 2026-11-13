@@ -7,43 +7,35 @@
 
     <title>Anjal Digital | Home</title>
 
-<!-- SEO Settings -->
+    <!-- SEO Settings -->
+    <meta name="description" content="Anjal Digital offers digital marketing, graphic design, video editing and professional web development services.">
+    <meta name="keywords" content="Anjal Digital, Digital Marketing, Web Development, Graphic Design, Video Editing">
+    <meta name="author" content="Anjal Digital">
+    <meta name="robots" content="index, follow">
 
-<meta name="description"
-content="Anjal Digital offers digital marketing, graphic design, video editing and professional web development services.">
+    <!-- Social Media SEO -->
+    <meta property="og:title" content="Anjal Digital | Digital Growth">
+    <meta property="og:description" content="Creative digital solutions for your business growth.">
+    <meta property="og:type" content="website">
 
-<meta name="keywords"
-content="Anjal Digital, Digital Marketing, Web Development, Graphic Design, Video Editing">
-
-<meta name="author" content="Anjal Digital">
-
-<meta name="robots" content="index, follow">
-
-<meta property="og:title"
-content="Anjal Digital | Digital Growth">
-
-<meta property="og:description"
-content="Creative digital solutions for your business growth.">
-
-<meta property="og:type" content="website">
-
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- Back To Top Button -->
+<body>
 
-<button id="backToTop" title="Back to top">
+<!-- Back To Top Button -->
+<button id="backToTop" title="Back to top" aria-label="Back to top">
     ↑
 </button>
 
-<body>
-
-    <!-- Navigation Bar -->
-    
+<!-- Navigation Bar -->
 <header>
     <h2>Anjal Digital</h2>
 
-    <button id="menuBtn" class="menu-btn">
+    <button id="menuBtn" class="menu-btn"
+        type="button" aria-label="Toggle navigation"
+        aria-expanded="false">
         ☰
     </button>
 
@@ -55,8 +47,6 @@ content="Creative digital solutions for your business growth.">
     </nav>
 </header>
 
-
-    
 <!-- Hero Banner -->
 <section id="home" class="hero">
 
@@ -84,22 +74,18 @@ content="Creative digital solutions for your business growth.">
     <div class="hero-image">
         <img
             src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900"
-            alt="Modern digital technology"
-        >
+            alt="Modern digital technology">
     </div>
 
 </section>
 
-
-<!-- About Us Section -->
-
+<!-- About Us -->
 <section id="about" class="about-section">
 
     <div class="about-image">
         <img
             src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900"
-            alt="Digital team working together"
-        >
+            alt="Digital team working together">
     </div>
 
     <div class="about-content">
@@ -128,8 +114,7 @@ content="Creative digital solutions for your business growth.">
 
 </section>
 
-<!-- Statistics Section -->
-
+<!-- Statistics -->
 <section id="statistics" class="statistics">
 
     <h2>Our Digital Journey</h2>
@@ -155,9 +140,7 @@ content="Creative digital solutions for your business growth.">
 
 </section>
 
-    
-<!-- Testimonials Section -->
-
+<!-- Testimonials -->
 <section id="testimonials" class="testimonials">
 
     <h2>What People Say</h2>
@@ -201,49 +184,60 @@ content="Creative digital solutions for your business growth.">
 </section>
 
 <!-- FAQ Section -->
+<section id="faq" class="faq-section">
 
+    <h2>Frequently Asked Questions</h2>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Let's connect and grow together!</p>
+    <div class="faq-container">
 
-  <form id="whatsappForm">
+        <div class="faq-item">
+            <button class="faq-question" type="button">
+                What is Anjal Digital?
+                <span>+</span>
+            </button>
 
-    <input
-      type="text"
-      name="name"
-      placeholder="Your Name"
-      required
-    >
+            <div class="faq-answer">
+                <p>
+                    Anjal Digital provides creative
+                    and digital services for online growth.
+                </p>
+            </div>
+        </div>
 
-    <input
-      type="tel"
-      name="phone"
-      placeholder="Your Phone Number"
-      required
-    >
+        <div class="faq-item">
+            <button class="faq-question" type="button">
+                What services do you provide?
+                <span>+</span>
+            </button>
 
-    <input
-      type="email"
-      name="email"
-      placeholder="Your Email"
-      required
-    >
+            <div class="faq-answer">
+                <p>
+                    We provide digital marketing,
+                    video editing, graphic design,
+                    web development and more.
+                </p>
+            </div>
+        </div>
 
-    <textarea
-      name="message"
-      placeholder="Your Message"
-      required
-    ></textarea>
+        <div class="faq-item">
+            <button class="faq-question" type="button">
+                How can I contact you?
+                <span>+</span>
+            </button>
 
-    <button type="submit">
-      Send on WhatsApp
-    </button>
+            <div class="faq-answer">
+                <p>
+                    You can contact us through
+                    our website contact form or WhatsApp.
+                </p>
+            </div>
+        </div>
 
-  </form>
+    </div>
+
 </section>
 
-ervices Section -->
+<!-- Services Section -->
 <section id="services">
 
     <h2>Our Services</h2>
@@ -291,11 +285,9 @@ ervices Section -->
 
 </section>
 
-
-    <!-- Contact Section -->
-    
 <!-- Contact Section -->
 <section id="contact">
+
     <h2>Contact Us</h2>
 
     <p>Let's connect and grow together!</p>
@@ -305,39 +297,41 @@ ervices Section -->
         <input
             type="text"
             id="name"
+            name="name"
             placeholder="Your Name"
-            required
-        >
+            autocomplete="name"
+            required>
 
         <input
             type="email"
             id="email"
+            name="email"
             placeholder="Your Email"
-            required
-        >
+            autocomplete="email"
+            required>
 
         <input
             type="text"
             id="service"
+            name="service"
             placeholder="Which Service You Need?"
-            required
-        >
+            required>
 
         <textarea
             id="message"
+            name="message"
             placeholder="Write Your Message"
-            required
-        ></textarea>
+            required></textarea>
 
-        <button type="submit">Send on WhatsApp</button>
+        <button type="submit">
+            Send on WhatsApp
+        </button>
 
     </form>
 
-    </section>
+</section>
 
-    <
 <!-- Professional Footer -->
-
 <footer class="main-footer">
 
     <div class="footer-container">
@@ -370,7 +364,10 @@ ervices Section -->
             <h3>Connect With Us</h3>
             <a href="#contact">Contact Us</a>
             <a href="https://wa.me/919913379665"
-               target="_blank">WhatsApp</a>
+               target="_blank"
+               rel="noopener noreferrer">
+                WhatsApp
+            </a>
         </div>
 
     </div>
@@ -383,3 +380,144 @@ ervices Section -->
     </div>
 
 </footer>
+
+<!-- Website JavaScript -->
+<script>
+
+// MOBILE NAVIGATION
+const menuBtn = document.getElementById("menuBtn");
+const navbar = document.getElementById("navbar");
+
+menuBtn.addEventListener("click", function () {
+    navbar.classList.toggle("active");
+
+    const isOpen = navbar.classList.contains("active");
+    menuBtn.setAttribute("aria-expanded", isOpen);
+});
+
+// CLOSE MOBILE MENU AFTER CLICK
+navbar.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        navbar.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded", "false");
+    });
+});
+
+// FAQ ACCORDION
+document.querySelectorAll(".faq-question").forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        const answer = this.nextElementSibling;
+        const isOpen = answer.classList.contains("active");
+
+        document.querySelectorAll(".faq-answer").forEach(function(item) {
+            item.classList.remove("active");
+        });
+
+        document.querySelectorAll(".faq-question span").forEach(function(icon) {
+            icon.textContent = "+";
+        });
+
+        if (!isOpen) {
+            answer.classList.add("active");
+            this.querySelector("span").textContent = "−";
+        }
+
+    });
+
+});
+
+// BACK TO TOP
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+});
+
+backToTop.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+// ANIMATED COUNTERS
+const counters = document.querySelectorAll(".counter");
+
+const observer = new IntersectionObserver(function(entries, obs) {
+
+    entries.forEach(function(entry) {
+
+        if (entry.isIntersecting) {
+
+            const counter = entry.target;
+            const target = Number(counter.dataset.target);
+            let current = 0;
+
+            const increment = Math.max(1, Math.ceil(target / 50));
+
+            const timer = setInterval(function() {
+
+                current += increment;
+
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+
+                counter.textContent = current;
+
+            }, 30);
+
+            obs.unobserve(counter);
+        }
+
+    });
+
+}, { threshold: 0.5 });
+
+counters.forEach(function(counter) {
+    observer.observe(counter);
+});
+
+// CONTACT FORM - WHATSAPP INTEGRATION
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const service = document.getElementById("service").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !service || !message) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    const whatsappNumber = "919913379665";
+
+    const whatsappMessage =
+        "NEW WEBSITE INQUIRY\n\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Service: " + service + "\n" +
+        "Message: " + message;
+
+    const whatsappURL =
+        "https://wa.me/" + whatsappNumber +
+        "?text=" + encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappURL, "_blank", "noopener,noreferrer");
+
+});
+
+</script>
+
+</body>
+</html>
